@@ -1,0 +1,153 @@
+
+<!DocType html>
+
+
+<html>
+
+    <head>
+      <link rel="stylesheet" href="form2.css">
+      <script src="2.js"></script>
+      
+ 
+        <title>Form</title>
+        <body>
+          
+            <form name="myForm" onsubmit="return validateForm(event)" method="post">
+                <h2>Customer Details:</h2>
+                <hr>
+                <p class="class"><b>Full  Name</b></p>
+                <div style="float:left;padding-right:30px">
+                  <label for="First  name"></label>
+                  
+                <input type="text" id="fname" name="name ">
+               
+                <div  class="error" id="fnameErr" required >
+                   
+                </div>
+                
+                <p style="font-size: 80%;">First  Name</p>
+                </div>
+                 
+                
+                <div style="float:left;">
+                  <label for="last  name"></label>
+                    <input type="text" id="lname" name=" name">
+                  <div class="error" id="lnameErr"></div>
+                    <p style="font-size: 80%;">last  Name</p>
+                </div>
+                <br>
+                <br>
+                <p class="class"><b> Address</b></p>
+                <div>
+                    
+                  <label for="Address1"></label>
+                    <input cols="50" rows="1" type="text" id="Address" name="address1 " >
+                </input>
+                    <div class="error" id="aErr"></div>
+                    <p style="font-size: 80%;">Street Address</p>
+                </div>
+
+                    <input cols="50" rows="1" type="text" id="st" name="address2 " >
+              </input>
+                      <div class="error" id="stErr"></div>
+
+                    
+                    <p style="font-size: 80%;">Street Address line 2</p>
+                    <div style="float:left;padding-right:30px">
+                        <input type="text" id="city" name="city ">
+                        <div class="error" id="cityErr"></div>
+                        <label for="city"></label>
+                        <p style="font-size: 80%;">city</p>
+                        </div>
+                        
+                            <input type="text" id="sp" name="State/province">
+                            <div class="error" id="spErr"></div>
+                            <label for="State/province"></label>
+                            <p style="font-size: 80%;">State/province</p>
+                            <input cols="50" rows="1" id="pin" name="pin" >
+                      </input>
+                                  <div class="error" id="pinErr"></div>
+
+
+                            <p style="font-size: 80%;">Postal/Zip code</p>
+                            <p class="class"><b>Phone Number</b></p> 
+                
+                            <input type="tel" id="phone" name="phone" placeholder="(000) 000-0000"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" >
+                            <div class="error" id="phoneErr"></div>
+                            <p><b>E-mail</b></p> 
+                
+                            <input type="email" id="email" name="mail" placeholder="ex:email@yahoo.com"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\[a-z]{2,4}$" >
+                            <div class="error" id="mailErr"></div>
+                            <p style="font-size: 80%;">example@example.com </p>
+                            <p class="class"><b>How did you hear about us?</b></p> 
+                
+                                <label for="us"></label>
+                                <select id="us" name="us">
+                                  <option value="Magazine">Magazine</option>
+                                  <option value="NewsPaper">NewsPaper</option>
+                                  <option value="Social Media">Social Media</option>
+                                  <option value="Friends">Friends</option>
+                                </select>
+
+                                         <p><b>Feedback about us:</b></p> 
+                            <textarea cols="50" rows="7" typr="text" id="fb" name="fb " ></textarea>
+                            <div class="error" id="fbErr"></div>
+
+
+                            <p><b>Suggetions if any for further improvement:</b></p> 
+                            <textarea cols="50" rows="7" type="text" id="Suggetion" name="Suggetion " ></textarea>
+                            <div class="error" id="suggestionErr"></div>
+                            
+                              <br>    
+                            <label for="recommend"><b>will you be willing to recommend us</b></label>
+                            <input type="checkbox" id="recommend" name="recommend" >
+                            
+
+                     
+                 <p><b>Gender</b></p>
+                <input type="radio" name="Gender" id="male" value="Male"> Male
+                <input type="radio" name="Gender" id="female" value="Female"> Female
+                <input type="radio" name="Gender" id="other" value="Other"> Other
+          
+
+       <p><b>Please give reference of any two people whom you feel:</b></p>
+                     
+
+<table style="width:100%" >
+
+ 
+  <tr>
+    <th >  </th>
+    <th style="background-color:gainsboro;">Full Name</th>
+    <th style="background-color:gainsboro;">Address</th>
+    <th style="background-color:gainsboro;">Contact Number</th>
+  </tr>
+  <tr>
+    <th style="background-color:gainsboro;">1</th>
+       <td> </td>
+       <td> </td>
+       <td></td>
+  </tr>
+  <tr>
+    <th style="background-color: gainsboro;">2</th>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+</table>
+          
+
+        
+<br>
+<center>
+<button class="button button1">submit</button>
+</center>
+ 
+
+
+
+    </body>
+
+</html>
