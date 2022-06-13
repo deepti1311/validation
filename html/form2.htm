@@ -5,6 +5,7 @@
 <html>
 
     <head>
+      <meta charset="UTF-8">
       <link rel="stylesheet" href="form2.css">
       <script src="2.js"></script>
       
@@ -14,7 +15,7 @@
           
             <form name="myForm" onsubmit="return validateForm(event)" method="post">
                 <h2>Customer Details:</h2>
-                <hr>
+                <!-- <hr> -->
                 <p class="class"><b>Full  Name</b></p>
                 <div style="float:left;padding-right:30px">
                   <label for="First  name"></label>
@@ -64,7 +65,8 @@
                             <div class="error" id="spErr"></div>
                             <label for="State/province"></label>
                             <p style="font-size: 80%;">State/province</p>
-                            <input cols="50" rows="1" id="pin" name="pin" >
+                            <input cols="50" rows="1" id="pin" name="pin"  placeholder="000-000"
+                             >
                       </input>
                                   <div class="error" id="pinErr"></div>
 
@@ -72,18 +74,17 @@
                             <p style="font-size: 80%;">Postal/Zip code</p>
                             <p class="class"><b>Phone Number</b></p> 
                 
-                            <input type="tel" id="phone" name="phone" placeholder="(000) 000-0000"
-                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" >
+                            <input type="tel" id="phone" name="phone"  placeholder = "(000) 000-0000" ></input>
                             <div class="error" id="phoneErr"></div>
                             <p><b>E-mail</b></p> 
                 
                             <input type="email" id="email" name="mail" placeholder="ex:email@yahoo.com"
-                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\[a-z]{2,4}$" >
+                             ></input>
                             <div class="error" id="mailErr"></div>
                             <p style="font-size: 80%;">example@example.com </p>
                             <p class="class"><b>How did you hear about us?</b></p> 
                 
-                                <label for="us"></label>
+                                <!-- <label for="us"></label> -->
                                 <select id="us" name="us">
                                   <option value="Magazine">Magazine</option>
                                   <option value="NewsPaper">NewsPaper</option>
@@ -98,7 +99,7 @@
 
                             <p><b>Suggetions if any for further improvement:</b></p> 
                             <textarea cols="50" rows="7" type="text" id="Suggetion" name="Suggetion " ></textarea>
-                            <div class="error" id="suggestionErr"></div>
+                            <div class="error" id="sErr"></div>
                             
                               <br>    
                             <label for="recommend"><b>will you be willing to recommend us</b></label>
@@ -107,10 +108,10 @@
 
                      
                  <p><b>Gender</b></p>
-                <input type="radio" name="Gender" id="male" value="Male"> Male
-                <input type="radio" name="Gender" id="female" value="Female"> Female
-                <input type="radio" name="Gender" id="other" value="Other"> Other
-          
+                <input type="radio" name="Gender" id="Gender" value="Male"> Male
+                <input type="radio" name="Gender" id="Gender" value="Female"> Female
+                <input type="radio" name="Gender" id="Gender" value="Other"> Other
+                            <div class="error" id="gErr"></div>
 
        <p><b>Please give reference of any two people whom you feel:</b></p>
                      
