@@ -1,0 +1,65 @@
+ body {
+   background-color: rgb(204, 226, 224);
+ }
+
+
+ form {
+   font-size: 130%;
+   border: 2px solid powderblue;
+   padding: 10px 80px;
+   margin: 60px 350px;
+   box-sizing: border-box;
+   background-color: white;
+ }
+
+
+
+ .class::after {
+   content: "*";
+   color: red
+ }
+
+
+ .button {
+   background-color: #4CAF50;
+   /* Green */
+   border: none;
+   color: white;
+   padding: 22px 54px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 20px;
+   margin: 16px 8px;
+   transition-duration: 0.4s;
+   cursor: pointer;
+ }
+
+ .button1 {
+   background-color: white;
+   color: black;
+   border: 2px solid #4CAF50;
+ }
+
+ .button1:hover {
+   background-color: #4CAF50;
+   color: white;
+ }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+
+}
+
+.error{
+  font-size:medium;
+  color: red;
+}
